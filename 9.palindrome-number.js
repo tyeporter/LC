@@ -13,16 +13,16 @@ var isPalindrome = function(x) {
     // Convert number to string
     x = String(x);
     // Create pointers
-    let p1 = 0, p2 = x.length - 1;
+    let ptr1 = 0, ptr2 = x.length - 1;
 
     // While pointers don't cross
-    while (p1 < p2) {
+    while (ptr1 < ptr2) {
         // If pointers are not equal...
-        if (x[p1] !== x[p2]) return false;
+        if (x[ptr1] !== x[ptr2]) return false;
 
         // Shift pointers
-        p1++;
-        p2--;
+        ptr1++;
+        ptr2--;
     }
 
     return true
